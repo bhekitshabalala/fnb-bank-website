@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Services | FNB </title>
+  <title>FNB | Contact</title>
   <style>
     * {
       margin: 0;
@@ -82,52 +82,57 @@
       color: #e0e0e0;
     }
 
-    .services {
+    .contact {
       padding: 60px 0;
       background-color: #ffffff;
+    }
+
+    .contact h3 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #003366;
       text-align: center;
     }
 
-    .services h3 {
-      font-size: 2.2em;
-      margin-bottom: 40px;
-      color: #003366;
-    }
-
-    .services .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .service-box {
-      flex: 1 1 300px;
-      max-width: 30%;
-      min-width: 280px;
-      padding: 25px;
-      background: #f9f9f9;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
     }
 
-    .service-box:hover {
-      transform: translateY(-8px);
-      background-color: #e6f2ff;
-      border-color: #b3d9ff;
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
     }
 
-    .service-box h4 {
-      color: #0059b3;
-      margin-bottom: 10px;
-      font-size: 1.3em;
-    }
-
-    .service-box p {
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
       font-size: 1em;
-      color: #555;
+    }
+
+    form button {
+      background-color: #003366;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0059b3;
     }
 
     footer {
@@ -148,9 +153,9 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -159,41 +164,28 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h2>Banking Services Tailored for You</h2>
-      <p>Explore what we offer to meet your financial needs.</p>
+      <h2>Contact Us</h2>
+      <p>We’re here to help. Reach out anytime!</p>
     </div>
   </section>
 
-  <!-- Main Services Section -->
+  <!-- Contact Form -->
   <main>
-    <section class="services">
+    <section class="contact">
       <div class="container">
-        <h3>Our Core Services</h3>
+        <h3>Send Us a Message</h3>
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
 
-        <div class="service-box">
-          <h4>Personal Banking</h4>
-          <p>Savings accounts, debit cards, mobile banking—manage your money securely and easily.</p>
-        </div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
 
-        <div class="service-box">
-          <h4>Business Banking</h4>
-          <p>Business accounts, credit options, and merchant services to help your company thrive.</p>
-        </div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <div class="service-box">
-          <h4>Loans & Credit</h4>
-          <p>Personal, home, and vehicle loans with flexible terms and competitive interest rates.</p>
-        </div>
-
-        <div class="service-box">
-          <h4>Investment Services</h4>
-          <p>Fixed deposits, wealth planning, and investment products tailored to your future goals.</p>
-        </div>
-
-        <div class="service-box">
-          <h4>Insurance Products</h4>
-          <p>Affordable and comprehensive insurance plans for life, vehicles, and properties.</p>
-        </div>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
   </main>

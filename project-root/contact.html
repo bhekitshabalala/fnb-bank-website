@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FNB | Contact</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: auto;
+    }
+
+    header h1 {
+      float: left;
+      margin-left: 20px;
+      font-size: 1.8em;
+    }
+
+    nav {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #003366, #0059b3);
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      color: #e0e0e0;
+    }
+
+    .contact {
+      padding: 60px 0;
+      background-color: #ffffff;
+    }
+
+    .contact h3 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #003366;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: #003366;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0059b3;
+    }
+
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>FNB</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We’re here to help. Reach out anytime!</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <main>
+    <section class="contact">
+      <div class="container">
+        <h3>Send Us a Message</h3>
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FNB. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
